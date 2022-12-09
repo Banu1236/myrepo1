@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Capitalizing array element</title>
+    </head>
+    <body>
+        <script>
+         const arr=["apple","banana","carrot","grapes"];
+         const arr2=["html","css","javascript","react"];
+         function f1(arr,ele)
+         {
+            for(i in arr)
+            {
+                if((arr[i]==ele)||i==ele)
+                {
+                    let str=arr[i].toUpperCase();
+                    arr.splice(i,1,str);   
+                    return arr;                
+                }
+            }
+         }
+         console.log(f1(arr,"carrot"));
+         console.log(f1(arr2,2));
+         </script>
+    </body>
+</html>
